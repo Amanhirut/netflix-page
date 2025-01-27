@@ -11,3 +11,23 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+:root {
+  --font-base: "Lexend", sans-serif;
+  --font-second-base: "Inter", sans-serif;
+  --big-color: #111; /* Dark color for the background */
+  --primary-color: #fff; /* White color for text or accents */
+  --secondary-color: #e50914; /* Netflix red */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--big-color); /* Use the variable for background */
+  font-family: var(--font-base); /* Set the primary font */
+  color: var(--primary-color); /* Set text color */
+}
