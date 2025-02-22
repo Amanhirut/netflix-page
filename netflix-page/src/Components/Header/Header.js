@@ -12,6 +12,7 @@ function Header() {
             <div className='header-left'>
             <ul>
               <li><img src={logo} alt='logo.png' width= "100"/></li>
+              <li>NetFlix</li>
               <li>Home</li>
               <li>TVShows</li>
               <li>Movies</li>

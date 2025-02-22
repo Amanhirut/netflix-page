@@ -1,49 +1,27 @@
-/* .header-outer-container{
+ 
+.header-outer-container {
     position: sticky;
     top: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(20, 20, 20e);
-    /* background-color: transparent; */
-    /* height: 10vh;
+    background-color: rgb(20, 20, 20);
+    background-color: transparent;
+    height: 10vh;
     color: white;
-    transition: all 0.5%; 
+    transition: all 0.5s;
     transition-timing-function: ease-in;
-    z-index: 1; */
-    /* background-color: red; */
-
-/* } */
-/* .header-container{
-    width: 90%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-
-} */
-/* .header-left ul{
-    width: 140%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-} */ 
-.header-outer-container {
-    width: 100%; /* Full-width container */
-    background-color: rgba(0, 0, 0, 0.8); /* Dark background */
-    position: sticky; /* Stick to the top when scrolling */
-    top: 0; /* Stick to the top of the viewport */
-    z-index: 100; /* Ensure it's above other elements */
+    z-index: 1; /* Ensure it's above other elements */
 }
 
 .header-container {
+    width: 90%;
     display: flex;
     justify-content: space-between; /* Space between left and right sections */
     align-items: center;
-    padding: 10px 20px; /* Add padding */
-    max-width: 1200px; /* Limit content width */
-    margin: 0 auto; /* Center the container */
+    /* padding: 10px 20px; 
+    max-width: 1200px; 
+    margin: 0 auto;  */
 }
 .header-left {
     display: flex; /* Align items horizontally */
@@ -52,10 +30,14 @@
 }
 
 .header-left ul {
+    width: 140%;
     display: flex; /* Horizontal layout for the list */
+    justify-content: space-between;
+    align-items: center;
     list-style: none; /* Remove bullets */
-    margin: 0;
-    padding: 0;
+    cursor: pointer;
+    /* left: 10px; */
+
 }
 
 .header-left ul li {
