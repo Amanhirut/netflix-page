@@ -1,89 +1,87 @@
- 
+
 .header-outer-container {
     position: sticky;
     top: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(20, 20, 20);
-    background-color: transparent;
+    background-color: black;
+    
     height: 10vh;
     color: white;
     transition: all 0.5s;
     transition-timing-function: ease-in;
-    z-index: 1; /* Ensure it's above other elements */
+    z-index: 1; 
 }
 
 .header-container {
     width: 90%;
     display: flex;
-    justify-content: space-between; /* Space between left and right sections */
+    justify-content: space-between; 
     align-items: center;
-    /* padding: 10px 20px; 
-    max-width: 1200px; 
-    margin: 0 auto;  */
+    
 }
 .header-left {
-    display: flex; /* Align items horizontally */
+    display: flex; 
     align-items: center;
-    gap: 15px; /* Space between list items */
+    gap: 15px; 
 }
 
 .header-left ul {
-    width: 140%;
-    display: flex; /* Horizontal layout for the list */
+    width: 100%;
+    display: flex; 
     justify-content: space-between;
     align-items: center;
-    list-style: none; /* Remove bullets */
+    list-style: none; 
     cursor: pointer;
-    /* left: 10px; */
+    
 
 }
 
 .header-left ul li {
-    font-size: 16px; /* Text size */
+    font-size: 16px; 
     font-weight: 500;
-    margin: 0 10px; /* Space between each item */
-    color: #fff; /* Text color */
+    margin: 0 10px; 
+    color: #fff; 
     cursor: pointer;
-    transition: color 0.3s ease; /* Smooth hover effect */
+    transition: color 0.3s ease; 
 }
 
 .header-left ul li img {
-    vertical-align: middle; /* Align logo with text */
-    cursor: pointer; /* Pointer for the logo */
+    vertical-align: middle; 
+    cursor: pointer; 
 }
 
 .header-left ul li:hover {
-    color: #ff6b6b; /* Highlight color on hover */
+    color: #ff6b6b; 
 }
 @media (max-width: 768px) {
     .header-container {
-        flex-direction: column; /* Stack items vertically */
+        flex-direction: column; 
         padding: 10px;
     }
 
     .header-left ul {
-        flex-wrap: wrap; /* Wrap items if needed */
+        flex-wrap: wrap; 
         justify-content: center;
         gap: 10px;
     }
 
     .header-left ul li {
-        font-size: 14px; /* Reduce text size */
+        font-size: 14px; 
     }
 }
 
 .header-right {
-    position: absolute; /* Allows precise positioning */
-    top: 0; /* Align to the top */
-    right: 0; /* Align to the right */
+    position: absolute; 
+    top: 0; 
+    right: 0; 
     display: flex;
     align-items: center;
-    gap: 10px; /* Spacing between icons */
-    padding: 10px 20px; /* Adds some padding */
-    background-color: rgba(0, 0, 0, 0.5); /* Optional: Add a background */
-    border-radius: 0 0 8px 8px; /* Optional: Rounded bottom corners */
+    gap: 10px; 
+    padding: 10px 20px; 
+    background-color: rgba(0, 0, 0, 0.5); 
+    border-radius: 0 0 8px 8px; 
 }
 
 .header-right ul {
@@ -94,13 +92,15 @@
 }
 
 .header-right ul li {
-    margin: 0 8px; /* Horizontal spacing between icons */
-    font-size: 24px; /* Icon size */
+    margin: 0 8px; 
+    font-size: 24px; 
     cursor: pointer;
-    color: #fff; /* Icon color */
+    color: #fff; 
     transition: color 0.3s ease;
 }
 
 .header-right ul li:hover {
-    color: #ff6b6b; /* Hover color */
-}
+    color: #ff6b6b; 
+} 
+
+

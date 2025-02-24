@@ -1,13 +1,13 @@
-.footer-outer-container {
-    background-color: #111; /* Matches Netflix dark theme */
-    color: #fff; /* White text for contrast */
-    padding: 2rem 1rem; /* Spacing around the footer */
-    font-family: "Lexend", sans-serif; /* Match your global font */
+/* .footer-outer-container {
+    background-color: #111; 
+    color: #fff; 
+    padding: 2rem 1rem; 
+    font-family: "Lexend", sans-serif; 
 }
 
 .footer-inner-container {
     max-width: 1200px;
-    margin: 0 auto; /* Center the footer on the page */
+    margin: 0 auto; 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -17,24 +17,24 @@
 .footer-icons {
     display: flex;
     justify-content: center;
-    gap: 1rem; /* Space between icons */
-    font-size: 1.5rem; /* Increase the icon size */
+    gap: 1rem; 
+    font-size: 1.5rem; 
 }
 
 .footer-icons svg {
     cursor: pointer;
-    color: var(--secondary-color); /* Netflix red */
+    color: var(--secondary-color); 
     transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .footer-icons svg:hover {
-    transform: scale(1.2); /* Slight enlargement on hover */
+    transform: scale(1.2); 
     color: #fff;
 }
 
 .footer-data {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Four equal columns */
+    grid-template-columns: repeat(4, 1fr); 
     gap: 1rem;
     text-align: left;
     width: 100%;
@@ -53,7 +53,7 @@
 }
 
 .footer-data li:hover {
-    color: var(--secondary-color); /* Highlighted on hover */
+    color: var(--secondary-color); 
 }
 
 .service-code {
@@ -62,7 +62,7 @@
     font-weight: bold;
     text-align: center;
     cursor: pointer;
-    color: var(--secondary-color); /* Netflix red */
+    color: var(--secondary-color); 
     transition: color 0.3s ease;
 }
 
@@ -74,5 +74,97 @@
     margin-top: 0.5rem;
     font-size: 0.8rem;
     text-align: center;
-    color: #777; /* Subtle grey for copyright text */
+    color: #777; 
+} */
+
+
+/* Footer Outer Container */
+.footer-outer-container {
+    background-color: #111; 
+    color: #fff; 
+    padding: 2rem 1rem; 
+    font-family: "Lexend", sans-serif; 
+    flex-shrink: 0; /* Prevents footer from collapsing */
+    width: 100%;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+/* Footer Inner Container */
+.footer-inner-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+/* Social Media Icons */
+.footer-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    font-size: 1.5rem;
+}
+
+.footer-icons svg {
+    cursor: pointer;
+    color: var(--secondary-color, #ff6b6b); /* Fallback color */
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.footer-icons svg:hover {
+    transform: scale(1.2);
+    color: #fff;
+}
+
+/* Footer Links */
+.footer-data {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    text-align: left;
+    width: 100%;
+}
+
+.footer-data ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-data li {
+    font-size: 0.9rem;
+    margin: 0.5rem 0;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.footer-data li:hover {
+    color: var(--secondary-color, #ff6b6b);
+}
+
+/* Service Code */
+.service-code {
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    color: var(--secondary-color, #ff6b6b);
+    transition: color 0.3s ease;
+}
+
+.service-code:hover {
+    color: #fff;
+}
+
+/* Copyright Text */
+.copy-write {
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+    text-align: center;
+    color: #777;
+    margin-bottom: 0;
+    
 }
