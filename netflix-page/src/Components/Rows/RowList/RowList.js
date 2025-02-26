@@ -2,7 +2,14 @@ import React from 'react';
 import Row from "../Row/Row";
 import requests from '../../../utils/request';
 
-function RowList() {
+function RowList({ title, fetchUrl }) {
+  if (title && fetchUrl) {
+    return (
+      <div>
+        <Row title={title} fetchUrl={fetchUrl} />
+      </div>
+    );
+  }
     return (
       <div>
         <Row title="NETFLIX ORIGINALS" fetchUrl={requests.fetchNetflixOriginals} />
